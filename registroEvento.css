@@ -1,0 +1,93 @@
+body{
+    background-color: burlywood;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 100px;
+    justify-content: center;
+    height: 100vh;
+
+    border: 2;
+}
+main {
+  width: 80%;                /* ancho del recuadro (puedes ajustar) */
+  margin: 20px auto;         /* centra el recuadro en la página */
+  padding: 20px;             /* espacio interno */
+  border: 2px solid black;   /* borde del recuadro */
+  border-radius: 10px;       /* esquinas redondeadas */
+  background-color: #dd7777; /* color de fondo */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* sombra opcional */
+}
+
+
+header img{
+    background-color: rgb(197, 145, 145);
+
+    border-radius: 8px;
+}
+header img{
+    border-radius: 10px;
+    object-fit: cover;
+}
+ table, td, th, img.peque{
+    border: 1px solid black;
+    border-collapse:collapse ;
+    justify-content: center;
+    margin: auto;
+    background-color: rgb(138, 145, 145);
+    height: 30px;
+    width:  30px;
+    image-rendering: auto;
+    margin-bottom: 30px;
+}
+.formulario{
+    background-color: rgb(192, 95, 168);
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    border-color: black;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 15px;
+    color: rgb(22, 22, 22);
+    
+}
+label{
+font-size: 14px;
+margin: 8px;
+display: block;
+color: rgb(22,22, 22);
+}
+input, textarea{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+
+}
+input:focus, textarea:focus{
+    border-color: chartreuse;
+    outline: none;
+
+}
+form {
+  width: 300px;              
+  margin: auto;         
+  padding: 20px;             
+  background: aquamarine;    
+  border-radius: 10px;   
+  margin-top: 30px;    
+}
+button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: chartreuse;
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+    background-color: green;
+}
