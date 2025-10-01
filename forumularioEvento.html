@@ -3,30 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Confirmacion Evento</title>
+    <title>Formulario</title>
     <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLqbrM_KOT2cgxRo9C2oYZ4dqeuiOrwiNCJQ&s">
     <link rel="stylesheet" href="registroEvento.css">
 </head>
 <body>
-        <header>
-            <h1>¡Ven y disfruta de nuestra gran gala!!!</h1>
-            <img src="https://media.gettyimages.com/id/559539649/es/foto/red-carpet-on-street-city-in-the-background-dark-clouds.jpg?s=612x612&w=0&k=20&c=Q8SYpOk-n1F7j6od1y_t4JPSpChd7cgLqdt-WAHW-Ro=" alt="Imagen de Bienvenida">
-        </header>
-    <hr>
+    <header>
+        <h1 class="titulo-principal">Formulario de Registro</h1>
+    </header>
     <main>
-        
-        <h1>Aca pondras encontra la informacion de tu interes</h1>
-        <a href="descripsionEvento.html" target="_blank">Descripción del evento</a>
-        <a href="forumularioEvento.html" target="_blank">Formulario de Registro</a>
-        <a href="tablasEvento.html" target="_blank">Momentos del evento</a>
+         
+        <form class="formulario">
+            <h2>Ingresa los siguientes datos</h2>
+            <label for="fname">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+            <label for="lname">Apellido</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Apellido">    
+            <label for="lcorreo">Email</label>
+            <input type="email" id="email" name="email" placeholder="E-mail" required>               
+            <label for="ltele">Telefono</label>
+            <input type="number" name="telefono" id="telefono" placeholder="Telefono" required>
+            <h4>Importante: llenar el campo con su profesion corrrespondiente</h4>
+            <label for="lpro">Profesión</label>
+            <input list="opciones1" name="opciones1" placeholder="Profesion">
+                <datalist id="opciones1">
+                    <option value="Cantante">
+                    <option value="Actor">
+                    <option value="Prensa">
+                    <option value="Otra">
+                </datalist>
+            <h2>Menu</h2>
+            <input type="radio" id="Baby beef" name="Baby beef">
+            <label for="lmenuuno">Baby beef</label>                   
+            <input type="radio" id="filet Mignon">
+            <label for="lmenudos">filet mignon</label>                 
+            <input type="radio" id="Toritlla española">
+            <label for="lmenutres"> Tortilla español</label>           
+            <textarea name="comentarios" id="comentarios" rows="10" cols="40" placeholder="Deja aquí tu mensaje"></textarea>                 
+            <button type="summit">Enviar</button>
 
+        </form>
+        <h1>Aca pondras encontra la informacion de tu interes</h1>
+           <a href="descripsionEvento.html" target="_blank">Descripción del evento</a>
+           <a href="forumularioEvento.html" target="_blank">Formulario de Registro</a>
+           <a href="tablasEvento.html" target="_blank">Momentos del evento</a>
        
     </main>
-    <hr>
+     <hr>
     <footer>
         <p>© Todos los derechos reservados</p>
         <img class="peque" src="https://images.vexels.com/media/users/3/137198/isolated/preview/07f0d7b69ef071571e4ada2f4d6a053a-icono-de-instagram-colorido.png" alt="">
         <img class="peque" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAL0AAACUCAMAAADxqtj8AAAAe1BMVEX///8AgP8Acf/7/P8Abv/m7f8Aev8AeP/3+/8Aff+FsP/l8f8xhP/Z6P/q8v9KlP9pof8AdP/e7f/v9v9upf92qf+Yvf/U5P+xzv+Muv8AhP+91P8tjP9Rl/9Ejv/N4P+cxP+qyf8Aav+DtP8liP9dnf8xkP+Rt/8AZf/xwDWsAAAD+UlEQVR4nO3c63qiMBAGYKE2ISAigkdAsdLu3v8Vri5P1wNKGDIJsTvf3/rQtynEBJgZjSgUCoVCoVAoFArllDeMmGcnwWq9SYt8y2J33D9uLLZ5kW7Wq8AzZp9nfh67MWdCOKoRgvHTsXI/mxuxh8uCc3X23R/BebEM9ePLHWPI9DqM7UrN9reIYQ/7JYJFWq/hvdAz7t9hYq8Pn030DXwdMcl04feV3pE/h1WaRj/I9eNP/DzQoo+4Abzj8EgHvnSN4B3HLfHxgSH7OfjnztHESV+HHbHx4U73ZHmJ2GGvGQ7m8Cf+ARfv+WYmnDp8kaDqV7nRsc9XqPrM5NCfBh93vVDGRvVxiYn3jobH/oi5U0xSc7P9OSzFvGyTQlkv6nTUF5j6qcqUc9p3C6fKd+dUW4d12M2LfIqp3/bWM159+stDtpoH0yDcZ4eNnxaVTL/F1L/3xTM+K/f3kmSeFZIDindMfc8pZ1w06LV/JrmOOKq+13Qv4vLJxDeV6WNUfZ+dCft6ulSU6t2h9SJ6vlixXi+clpWWVD8eWD9uW2jZPvZx2nY8y/VCtH7dWK6Py9b7qXbrZZsju/Xcb1+f26131u3Hs1ovouc3ZLwkSYLwU7JKG1LPZo8OMj18xR91xrLNzqBj/+hWXla53dfZg573D+6FZTFkjzCovrlKmFegDc6Q+klztj/CdmeDjn1jyplHr6OfNPQZcFs/qL7xzkEJ3NbbpV8Ct/V26X+9sh788IL0pCc96X+wXtykqY9vP2CXfhtdp2jol7ubD+RW6cXnPrxO445CcPPjcCM7kYzq2Qz2lGwpex5gWA96zpQsLBt7kH4qfYBqs/5dusm1WR9KZ3+b9Svp14fN+vVL66UTptX69KXP+0j6xonNevntEYv13viV9eHHK+sz+V7HsD5Mppc0F5zn5z3f8aTrY9Pr+2qWXmVx/594O6SLf/G/LLtqHcGuwsX9K+ie7/JLOtyRHXRX3tTbvSsnPelJT3rSk570/7Ee9ha1uh73LWrYL1fX477BDnvNQF2PWj0ArNxQ1uNWbgCrZtT1qFUzwIolZT1uxRKwWkxdj1otBqzUU9bjVuoBqySV9bhVksAKVfWxx61QhVUHq+qxq4Plzygx9bIX4MEBVcUrjz1yVTysI4GiHr8jAagbhKIevxvEKDA39ho6cUC6oKjpdXRBgXSgmdyvsSB6PR1oAN1/VPS6uv9077ykoNfWeal716v+eo1drzp3HOut19pxrGu3t5563d3eRt067fXSG+i0N+rU5RCuN9XlcNShwyRAb7rD5F9Ne3fPuPFdu/j9uLsn++7uidusqFO6d0u1qrMqhUKhUCgUCoVCsTF/AHXOZfaO97wRAAAAAElFTkSuQmCC" alt="">
-    </footer>    
+    </footer>   
 </body>
 </html>
